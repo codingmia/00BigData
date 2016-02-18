@@ -1,0 +1,31 @@
+1. Download the example of Decision Tree 
+from https://www.knime.org/introduction/examples
+
+2. In File Reader Node, configure the node and modify the valid URL to be :
+http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
+
+3. Modify the column name based on the description
+http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.names
+
+4. view the conFusion matrix and see the classification results.
+
+
+recall = TP / (TP + FN)
+precision = TP / (TP + FP)
+
+Recall literally is how many of the true positives were recalled (found), 
+i.e. how many of the correct hits were also found.
+
+Precision (your formula is incorrect) is how many of the returned hits were true positive 
+i.e. how many of the found were correct hits.
+
+5. Calculation Details
+r1 15475 / 15475 + 3272
+p1 15475 / 15475 + 2317
+
+r2 3172 /15475 + 3172
+p2 3172 / 3172 + 1829
+
+1 33/103
+2 30 / 33 + 34 + 30
+3 34 / 34 + 65 = 34 / 99

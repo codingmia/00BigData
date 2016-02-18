@@ -1,0 +1,20 @@
+# Some general Map Reduce HDFS commands
+
+hdfs dfs -rmr /dir
+hdfs dfs -ls /dir
+
+
+
+pig -x mapreduce
+exec wordcount.pig (inside the grunt)
+
+
+
+hdfs dfs -mkdir /user/cloudera/newDir
+hdfs dfs -copyFromLocal /home/cloudera/testfile* 
+
+
+/user/cloudera/pigin
+hdfs dfs -copyToLocal /user/cloudera/pigoutnew/word_counts_pig /home/cloudera/word_counts_pig
+
+STORE Y_rnk into '/user/cloudera/output/Y_rnk';
